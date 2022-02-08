@@ -111,12 +111,12 @@
             <h2>Charlemos :D</h2>
             <div class="container-contact">
                 <div class="contact-form">
-                    <form class="form" method="post" action="form.php">
-                        <input type="text" name="nombre" placeholder="Nombre" id="nombre">
-                        <input type="email" required name="email" placeholder="Correo" id="correo">
+                    <form class="form" method="post" action="https://formsubmit.co/nahueltroncosoraskovsky@gmail.com"> <!--Aquí puedes poner la tu correo. Al enviar un mensaje te llegará un correo para confirmar. -->
+                        <input type="text" name="name" placeholder="Nombre" id="nombre" required>
+                        <input type="email" name="email" placeholder="Correo" id="correo" required>
                         <textarea type="text" name="mensaje" placeholder="Escríbe tu mensaje aquí..."></textarea>
+                        <button class="btn-submit" type="submit">Envíar</button>
                     </form>
-                    <button class="btn-submit" type="submit" onclick="checkear_correo(form.email.value)">Envíar</button>
                 </div>
             </div>
         </div>
@@ -155,15 +155,6 @@
             btn_menu.classList.toggle('active');
             menu.classList.toggle('active');
         }
-    </script>
-
-    <script>
-        function checkear_correo(correo) {
-            if((/^[A-Za-z][A-Za-z0-9_]*@[A-Za-z0-9_]+\.[A-Za-z0-9_.]+[A-za-z]$/.test(document.form.email.value))) {
-                alert('El E-Mail ingresado es inválido!');
-            return false;
-            }
-        };
     </script>
     
 </body>
