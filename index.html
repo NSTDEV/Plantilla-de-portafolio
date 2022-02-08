@@ -112,10 +112,13 @@
             <div class="container-contact">
                 <div class="contact-form">
                     <form class="form" method="post" action="https://formsubmit.co/c913193a8521e869b7a1caaf2712dbe7"> <!--Aquí puedes poner tu correo, después de la barra. Al enviar un mensaje te llegará un correo para confirmar. -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://nahueltr.github.io/Plantilla-de-portafolio-GRATUITA/">
+                        <input type="hidden" name="_subject" value="¡Nuevo mensaje!">
                         <input type="text" name="name" placeholder="Nombre" id="nombre" required>
                         <input type="email" name="email" placeholder="Correo" id="correo" required>
                         <textarea type="text" name="mensaje" placeholder="Escríbe tu mensaje aquí..."></textarea>
-                        <button class="btn-submit" type="submit">Envíar</button>
+                        <button class="btn-submit" type="submit" onclick="Thanks()">Envíar</button>
                     </form>
                 </div>
             </div>
@@ -154,6 +157,10 @@
         btn_menu.onclick = function(){
             btn_menu.classList.toggle('active');
             menu.classList.toggle('active');
+        }
+
+        function Thanks() {
+            alert("¡Gracias! El correo se envió correctamente")
         }
     </script>
     
