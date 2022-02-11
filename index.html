@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/9104043266.js" crossorigin="anonymous"></script>
     <title>Plantilla Personalizable</title>
 </head>
 <body>
@@ -37,7 +36,7 @@
             </main>
 
 
-        <div class="about" id="about">
+        <section class="about" id="about">
             <img src="img/About.jpg" alt="Retrato">
             <div class="about-info">
             <h2>Acerca de mí</h2>
@@ -48,10 +47,10 @@
                 <button class="buttons">Seguir leyendo</button>
             </a>
             </div>
-        </div>
+        </section>
 
 
-        <div class="portfolio" id="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="portfolio-headings">
                 <h2>Mi Portafolio</h2>
                 <div class="divider"></div>
@@ -105,24 +104,24 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="contact-section" id="contact">
-            <h2>Charlemos :D</h2>
+        <section class="contact-section" id="contact">
+            <h2>Charlemos</h2>
             <div class="container-contact">
                 <div class="contact-form">
-                    <form class="form" method="post" action="https://formsubmit.co/c913193a8521e869b7a1caaf2712dbe7"> <!--Aquí puedes poner tu correo, después de la barra. Al enviar un mensaje te llegará un correo para confirmar.-->
+                    <form class="form" id="formulario" method="POST" action="https://formsubmit.co/c913193a8521e869b7a1caaf2712dbe7"> <!--Aquí puedes poner tu correo, después de la barra. Al enviar un mensaje te llegará un correo para confirmar.-->
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_next" value="https://nahueltr.github.io/Plantilla-de-portafolio-GRATUITA/"> <!--Aquí puedes poner tu página web-->
                         <input type="hidden" name="_subject" value="¡Nuevo mensaje!">
-                        <input type="text" name="name" placeholder="Nombre" id="nombre" required>
-                        <input type="email" name="email" placeholder="Correo" id="correo" required>
-                        <textarea type="text" name="mensaje" placeholder="Escríbe tu mensaje aquí..."></textarea>
-                        <button class="btn-submit" type="submit" onclick="Thanks()">Envíar</button>
+                        <input type="text" name="Nombre" placeholder="Nombre" id="nombre" required>
+                        <input type="email" name="Correo" placeholder="Correo" id="correo" required>
+                        <textarea type="text" name="Mensaje" placeholder="Escríbe tu mensaje aquí..." id="mensaje"></textarea>
+                        <button class="btn-submit" type="submit" id="thanks">Envíar</button>
                     </form>
                 </div>
             </div>
-        </div>
+        </section>
 
         <footer class="footer">
             <div class="footer-content">
@@ -142,27 +141,10 @@
             </div>
         </footer>
     </div>
-
-    <script>
-        const menu = document.getElementById('menu');
-        const btn_menu = document.getElementById('btn_menu')
-
-        document.onclick = function(e){
-            if(e.target.id !== "btn_menu" && e.target.id !== "menu"){
-            menu.classList.remove('active');
-            btn_menu.classList.remove('active');
-            }
-        };
-
-        btn_menu.onclick = function(){
-            btn_menu.classList.toggle('active');
-            menu.classList.toggle('active');
-        }
-
-        function Thanks() {
-            alert("¡Gracias! El correo se envió correctamente")
-        }
-    </script>
+    
+    <script src="https://kit.fontawesome.com/9104043266.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="funciones.js"></script>
     
 </body>
 </html>
