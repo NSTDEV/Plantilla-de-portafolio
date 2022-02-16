@@ -177,7 +177,6 @@ span {
     margin: 0;
     font-size: 1.5rem;
 }
-
 /*----------DECORATIVE----------*/
 
 
@@ -261,7 +260,6 @@ span {
 }
 
 .card-img {
-    width: 100%;
     box-sizing: border-box;
     height: 8.3em;
     background-image: url(../img/Foto.jpg);
@@ -285,26 +283,23 @@ span {
 
 .card-projects-link {
     display: flex;
+    padding-bottom: 0.9em;
     justify-content: space-evenly;
     border-left: 0.3em solid #ffbb42;
     border-right: 0.3em solid #ffbb42;
     border-bottom: 0.3em solid #ffbb42;
-    padding-bottom: 0.6em;
 }
 
 .card-projects-link a {
     color: #FFFFFF;
     text-decoration: none;
-}
-
-.card-projects-link i {
     font-size: 1.5em;
     text-shadow: 0.07em 0.07em #164A41;
-    transition: ease-in .3s;
     border-radius: 100%;
+    transition: ease-in .3s;
 }
 
-.card-projects-link i:hover {
+.card-projects-link a:hover {
     text-shadow: 0.07em 0.07em #164A41;
     background-color: #164A41;
 }
