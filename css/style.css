@@ -315,8 +315,7 @@ span {
 .contact-section {
     width: 100vw;
     box-sizing: border-box;
-    background-color: #1b0d0c;
-    background-image: url(../img/Contact.jpg);
+    background: linear-gradient(#1b0d0c 15%, #ffbb42 290%);
     padding: 2em 0em;
     border-top: 0.3em solid #ffbb42;
     border-bottom: 0.3em solid #ffbb42;
