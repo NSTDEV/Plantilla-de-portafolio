@@ -124,7 +124,7 @@ ul.show {
 .info-content p {
     font-size: 1em;
     padding-right: 2em;
-    margin-bottom: 1.3em;
+    margin: 0 auto 1.3em;
     color: #FFFFFF;
 }
 
@@ -216,7 +216,7 @@ span {
 
 .about p {
     padding-right: 2em;
-    margin-bottom: 1.3em;
+    margin: 0 auto 1.3em;
 }
 /*----------ABOUT----------*/
 
@@ -484,8 +484,7 @@ span {
     }
     
     .info-content a {
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
     }
 
     .main h1 {
