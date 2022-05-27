@@ -1,4 +1,4 @@
-<h1 align="center">Hola 👋, soy Nahuel</h1>
+<h1 align="center">Hola 👋, soy Nahuel Troncoso</h1>
 <h3 align="center">Un artista y desarrollador apasionado!</h3>
 
 - 🌱 Estoy estudiando desarrollo web y aplicaciones digitales pero constantemente aprendo **Unity, Blender, Spline**
