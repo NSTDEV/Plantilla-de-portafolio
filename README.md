@@ -5,7 +5,7 @@
 
 - 💬 Puedo responderte sobre **HTML5, CSS, JavaScript, PHP, SQL, Python, C#**
 
-- 📫 Contactame! **nahueltroncosoraskovsky@gmail.com**
+- 📫 Mi correo **nahueltroncosoraskovsky@gmail.com**
 
 - ⚡ Me apasionan **los videojuegos, los animales y el arte**
 
